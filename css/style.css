@@ -26486,3 +26486,21 @@ body.dark-mode .register-step-number {
     border-color: #8EC5E8 !important;
     background-color: transparent !important;
 }
+
+/* LOGIN & REGISTER LOGO — DESKTOP */
+
+@media (min-width: 1200px) {
+
+    .login-header .login-logo img {
+        width: 185px !important;
+        height: 75px !important;
+        object-fit: contain;
+    }
+
+    .register-header .register-logo img {
+        width: 185px !important;
+        height: 75px !important;
+        object-fit: contain;
+    }
+
+}
