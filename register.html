@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | Skylight Solutions</title>
+    <meta name="description"
+          content="Create your Skylight Solutions account to explore skylight installations, manage projects, and discover natural daylight solutions.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main and Responsive CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         REGISTER HEADER
+    ====================================================== -->
+
+    <header class="register-header">
+
+        <a href="index.html"
+           class="register-logo"
+           aria-label="Skylight Solutions home">
+
+            <img src="images/logo.png"
+                 alt="Skylight Solutions"
+                 width="155"
+                 height="70">
+        </a>
+
+        <div class="register-header-actions">
+
+            <!-- RTL TOGGLE -->
+            <button type="button"
+                    class="register-header-toggle"
+                    id="registerRtlToggle"
+                    aria-label="Switch text direction"
+                    aria-pressed="false"
+                    title="Toggle RTL">
+
+                <i class="fa-solid fa-right-left"
+                   aria-hidden="true"></i>
+            </button>
+
+            <!-- DARK MODE TOGGLE -->
+            <button type="button"
+                    class="register-header-toggle"
+                    id="registerThemeToggle"
+                    aria-label="Switch to dark mode"
+                    aria-pressed="false"
+                    title="Toggle dark mode">
+
+                <i class="fa-solid fa-moon"
+                   aria-hidden="true"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         REGISTER PAGE
+    ====================================================== -->
+
+    <main class="register-page">
+
+        <div class="register-layout">
+
+            <!-- =================================================
+                 LEFT IMAGE AND CONTENT PANEL
+            ================================================== -->
+
+            <section class="register-visual"
+                     aria-label="Skylight Solutions introduction">
+
+                <div class="register-visual-overlay"
+                     aria-hidden="true"></div>
+
+                <div class="register-visual-content">
+
+                    <div class="register-visual-eyebrow">
+                        <span aria-hidden="true"></span>
+                        BRING NATURAL LIGHT HOME
+                    </div>
+
+                    <h1>
+                        A Brighter Home
+                        <span>Begins With Us.</span>
+                    </h1>
+
+                    <p>
+                        Create your account to explore skylight
+                        solutions, discover installation options,
+                        manage your projects, and bring more natural
+                        daylight into your space.
+                    </p>
+
+                    <div class="register-visual-footer">
+                        <span>NATURAL LIGHT</span>
+                        <b aria-hidden="true">•</b>
+                        <span>SMART DESIGN</span>
+                        <b aria-hidden="true">•</b>
+                        <span>BETTER LIVING</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 RIGHT REGISTRATION FORM PANEL
+            ================================================== -->
+
+            <section class="register-panel"
+                     aria-labelledby="registerHeading">
+
+                <div class="register-panel-inner">
+
+                    <!-- STEP LABEL -->
+                    <div class="register-section-label">
+
+                        <span class="register-step-number">02</span>
+
+                        <span class="register-label-line"
+                              aria-hidden="true"></span>
+
+                        <span>CREATE ACCOUNT</span>
+
+                    </div>
+
+
+                    <!-- FORM INTRODUCTION -->
+                    <div class="register-intro">
+
+                        <span class="register-eyebrow">
+                            JOIN SKYLIGHT SOLUTIONS
+                        </span>
+
+                        <h2 id="registerHeading">
+                            Your Brighter
+                            <span>Future Starts Here.</span>
+                        </h2>
+
+                        <p>
+                            Enter your details to create your account
+                            and explore our skylight solutions.
+                        </p>
+
+                    </div>
+
+
+                    <!-- REGISTRATION FORM -->
+                    <form class="register-form"
+                          id="registerForm"
+                          action="#"
+                          method="post">
+
+                        <!-- FULL NAME -->
+                        <div class="register-field">
+
+                            <label for="registerName">
+                                Full Name
+                            </label>
+
+                            <div class="register-input-wrap">
+
+                                <i class="fa-regular fa-user"
+                                   aria-hidden="true"></i>
+
+                                <input type="text"
+                                       id="registerName"
+                                       name="name"
+                                       placeholder="Enter your full name"
+                                       autocomplete="name"
+                                       required>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+                        <div class="register-field">
+
+                            <label for="registerEmail">
+                                Email Address
+                            </label>
+
+                            <div class="register-input-wrap">
+
+                                <i class="fa-regular fa-envelope"
+                                   aria-hidden="true"></i>
+
+                                <input type="email"
+                                       id="registerEmail"
+                                       name="email"
+                                       placeholder="Enter your email address"
+                                       autocomplete="email"
+                                       required>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PASSWORD -->
+                        <div class="register-field">
+
+                            <label for="registerPassword">
+                                Password
+                            </label>
+
+                            <div class="register-input-wrap">
+
+                                <i class="fa-solid fa-lock"
+                                   aria-hidden="true"></i>
+
+                                <input type="password"
+                                       id="registerPassword"
+                                       name="password"
+                                       placeholder="Create a password"
+                                       autocomplete="new-password"
+                                       minlength="8"
+                                       required>
+
+                                <button type="button"
+                                        class="register-password-toggle"
+                                        data-password-target="registerPassword"
+                                        aria-label="Show password"
+                                        aria-pressed="false">
+
+                                    <i class="fa-regular fa-eye"
+                                       aria-hidden="true"></i>
+
+                                </button>
+
+                            </div>
+
+                            <small class="register-field-help">
+                                Use at least 8 characters.
+                            </small>
+
+                        </div>
+
+
+                        <!-- CONFIRM PASSWORD -->
+                        <div class="register-field">
+
+                            <label for="registerConfirmPassword">
+                                Confirm Password
+                            </label>
+
+                            <div class="register-input-wrap">
+
+                                <i class="fa-solid fa-lock"
+                                   aria-hidden="true"></i>
+
+                                <input type="password"
+                                       id="registerConfirmPassword"
+                                       name="confirmPassword"
+                                       placeholder="Re-enter your password"
+                                       autocomplete="new-password"
+                                       minlength="8"
+                                       required>
+
+                                <button type="button"
+                                        class="register-password-toggle"
+                                        data-password-target="registerConfirmPassword"
+                                        aria-label="Show confirm password"
+                                        aria-pressed="false">
+
+                                    <i class="fa-regular fa-eye"
+                                       aria-hidden="true"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- TERMS AND CONDITIONS -->
+                        <div class="register-terms">
+
+                            <input type="checkbox"
+                                   id="registerTerms"
+                                   name="terms"
+                                   required>
+
+                            <label for="registerTerms">
+                                I agree to the
+                                <a href="terms.html">Terms &amp; Conditions</a>
+                                and
+                                <a href="privacy.html">Privacy Policy</a>.
+                            </label>
+
+                        </div>
+
+
+                        <!-- CREATE ACCOUNT BUTTON -->
+                        <button type="submit"
+                                class="register-submit">
+
+                            <span>Create My Account</span>
+
+                            <i class="fa-solid fa-arrow-right"
+                               aria-hidden="true"></i>
+
+                        </button>
+
+                    </form>
+
+
+                    <!-- SOCIAL SIGN-UP DIVIDER -->
+                    <div class="register-social-divider">
+
+                        <span aria-hidden="true"></span>
+
+                        <p>OR SIGN UP WITH</p>
+
+                        <span aria-hidden="true"></span>
+
+                    </div>
+
+
+                    <!-- SOCIAL SIGN-UP BUTTONS -->
+                    <div class="register-social-buttons">
+
+                        <!-- GOOGLE -->
+                        <button type="button"
+                                class="register-social-button"
+                                data-provider="google">
+
+                            <svg class="register-google-icon"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 48 48"
+                                 role="img"
+                                 aria-label="Google">
+
+                                <path fill="#EA4335"
+                                      d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"
+                                      transform="translate(2 2) scale(.92)"/>
+
+                                <path fill="#4285F4"
+                                      d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.73 7.18l7.64 5.93c4.46-4.13 7.13-10.2 7.13-17.58z"
+                                      transform="translate(-1 0) scale(.96)"/>
+
+                                <path fill="#FBBC05"
+                                      d="M10.53 28.59A14.4 14.4 0 0 1 9.75 24c0-1.59.27-3.13.75-4.59l-7.98-6.19A23.9 23.9 0 0 0 0 24c0 3.87.93 7.52 2.56 10.78l7.97-6.19z"
+                                      transform="translate(2 1) scale(.96)"/>
+
+                                <path fill="#34A853"
+                                      d="M24 48c6.48 0 11.93-2.13 15.91-5.87l-7.64-5.93c-2.13 1.43-4.89 2.28-8.27 2.28-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"
+                                      transform="translate(2 0) scale(.92)"/>
+
+                            </svg>
+
+                            <span>Google</span>
+
+                        </button>
+
+
+                        <!-- FACEBOOK -->
+                        <button type="button"
+                                class="register-social-button"
+                                data-provider="facebook">
+
+                            <i class="fa-brands fa-facebook"
+                               aria-hidden="true"></i>
+
+                            <span>Facebook</span>
+
+                        </button>
+
+
+                        <!-- APPLE -->
+                        <button type="button"
+                                class="register-social-button"
+                                data-provider="apple">
+
+                            <i class="fa-brands fa-apple"
+                               aria-hidden="true"></i>
+
+                            <span>Apple</span>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- LOGIN LINK -->
+                    <p class="register-login-text">
+                        Already have an account?
+
+                        <a href="login.html">
+                            Sign In
+                        </a>
+                    </p>
+
+
+                    <!-- BOTTOM TAGLINE -->
+                    <div class="register-panel-bottom">
+
+                        <span>NATURAL LIGHT</span>
+                        <b aria-hidden="true">•</b>
+                        <span>SMART DESIGN</span>
+                        <b aria-hidden="true">•</b>
+                        <span>BETTER LIVING</span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- SHARED SITE PREFERENCES -->
+    <script src="js/main.js"></script>
+
+    
+
+</body>
+</html>

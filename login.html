@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Skylight Solutions</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- LOGIN HEADER -->
+    <header class="login-header">
+
+        <a href="index.html" class="login-logo" aria-label="Skylight Home">
+            <img src="images/logo.png" alt="Skylight Solutions Logo">
+        </a>
+
+        <div class="login-header-controls">
+
+            <button type="button"
+                    class="login-header-toggle"
+                    id="loginRtlToggle"
+                    aria-label="Switch text direction"
+                    title="Switch text direction">
+                <i class="fa-solid fa-right-left" aria-hidden="true"></i>
+            </button>
+
+            <button type="button"
+                    class="login-header-toggle"
+                    id="loginThemeToggle"
+                    aria-label="Toggle dark mode"
+                    title="Toggle dark mode">
+                <i class="fa-regular fa-moon" aria-hidden="true"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- LOGIN PAGE -->
+    <main class="login-page">
+
+        <div class="login-layout">
+
+            <!-- LEFT IMAGE PANEL -->
+            <section class="login-visual"
+                     aria-label="Welcome to Skylight Solutions">
+
+                <div class="login-visual-overlay"></div>
+
+                <div class="login-visual-content">
+
+                    <span class="login-visual-eyebrow">
+                        WELCOME BACK
+                    </span>
+
+                    <h1 class="login-visual-title">
+                        A Brighter View
+                        <span>Starts Here.</span>
+                    </h1>
+
+                    <p class="login-visual-description">
+                        Sign in to manage your skylight projects,
+                        explore installation services, and keep your
+                        spaces filled with natural light.
+                    </p>
+
+                    <div class="login-visual-footer">
+                        <span>DESIGN</span>
+                        <span class="login-visual-dot"></span>
+                        <span>DAYLIGHT</span>
+                        <span class="login-visual-dot"></span>
+                        <span>COMFORT</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- RIGHT LOGIN PANEL -->
+            <section class="login-panel">
+
+                <div class="login-panel-inner">
+
+                    <!-- Section Label -->
+                    <div class="login-section-label">
+                        <span class="login-section-number">01</span>
+                        <span class="login-section-line"></span>
+                        <span class="login-section-text">MEMBER LOGIN</span>
+                    </div>
+
+                    <!-- Heading -->
+                    <div class="login-heading">
+
+                        <span class="login-heading-eyebrow">
+                            WELCOME BACK
+                        </span>
+
+                        <h2 class="login-title">
+                            Good To See
+                            <span>You Again.</span>
+                        </h2>
+
+                        <p class="login-description">
+                            Sign in to continue to your Skylight
+                            Solutions account.
+                        </p>
+
+                    </div>
+
+
+                    <!-- LOGIN FORM -->
+                    <form class="login-form"
+                          id="loginForm"
+                          action="#"
+                          method="post">
+
+                        <!-- Email -->
+                        <div class="login-field">
+
+                            <label for="loginEmail">Email Address</label>
+
+                            <div class="login-input-wrapper">
+
+                                <i class="fa-regular fa-envelope login-input-icon"
+                                   aria-hidden="true"></i>
+
+                                <input
+                                    type="email"
+                                    id="loginEmail"
+                                    name="email"
+                                    placeholder="Enter your email address"
+                                    autocomplete="username"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+                        <!-- Password -->
+                        <div class="login-field">
+
+                            <label for="loginPassword">Password</label>
+
+                            <div class="login-input-wrapper">
+
+                                <i class="fa-solid fa-lock login-input-icon"
+                                   aria-hidden="true"></i>
+
+                                <input
+                                    type="password"
+                                    id="loginPassword"
+                                    name="password"
+                                    placeholder="Enter your password"
+                                    autocomplete="current-password"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    class="login-password-toggle"
+                                    id="loginPasswordToggle"
+                                    aria-label="Show password"
+                                    aria-pressed="false"
+                                >
+                                    <i class="fa-regular fa-eye"
+                                       aria-hidden="true"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Remember Me / Forgot Password -->
+                        <div class="login-form-options">
+
+                            <label class="login-remember">
+
+                                <input
+                                    type="checkbox"
+                                    id="loginRemember"
+                                    name="remember"
+                                >
+
+                                <span class="login-custom-checkbox"></span>
+                                <span>Remember me</span>
+
+                            </label>
+
+                            <a href="forgot-password.html"
+                               class="login-forgot-link">
+                                Forgot Password?
+                            </a>
+
+                        </div>
+
+                        <!-- Login Button -->
+                        <button type="submit" class="login-submit">
+
+                            <span>Login to Your Account</span>
+
+                            <i class="fa-solid fa-arrow-right"
+                               aria-hidden="true"></i>
+
+                        </button>
+
+                    </form>
+
+
+                    <!-- SOCIAL LOGIN DIVIDER -->
+                    <div class="login-social-divider">
+                        <span></span>
+                        <p>OR CONTINUE WITH</p>
+                        <span></span>
+                    </div>
+
+
+                    <!-- SOCIAL LOGIN BUTTONS -->
+                    <div class="login-social-buttons">
+
+                        <!-- GOOGLE - INLINE SVG -->
+                        <button type="button"
+                                class="login-social-button login-google"
+                                data-provider="google"
+                                aria-label="Continue with Google">
+
+                            <svg class="login-google-svg"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 48 48"
+                                 width="20"
+                                 height="20"
+                                 role="img"
+                                 aria-label="Google">
+
+                                <path fill="#EA4335"
+                                      d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5Z"/>
+
+                                <path fill="#4285F4"
+                                      d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.73 7.18l7.66 5.95c4.47-4.13 7.11-10.2 7.11-17.6Z"/>
+
+                                <path fill="#FBBC05"
+                                      d="M10.53 28.59A14.4 14.4 0 0 1 9.75 24c0-1.59.27-3.13.76-4.59l-7.98-6.19A23.9 23.9 0 0 0 0 24c0 3.87.93 7.55 2.56 10.78l7.97-6.19Z"/>
+
+                                <path fill="#34A853"
+                                      d="M24 48c6.48 0 11.93-2.13 15.91-5.85l-7.66-5.95c-2.13 1.43-4.86 2.3-8.25 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48Z"/>
+
+                            </svg>
+
+                            <span>Google</span>
+
+                        </button>
+
+
+                        <!-- FACEBOOK -->
+                        <button type="button"
+                                class="login-social-button login-facebook"
+                                data-provider="facebook"
+                                aria-label="Continue with Facebook">
+
+                            <i class="fa-brands fa-facebook"
+                               aria-hidden="true"></i>
+
+                            <span>Facebook</span>
+
+                        </button>
+
+
+                        <!-- APPLE -->
+                        <button type="button"
+                                class="login-social-button login-apple"
+                                data-provider="apple"
+                                aria-label="Continue with Apple">
+
+                            <i class="fa-brands fa-apple"
+                               aria-hidden="true"></i>
+
+                            <span>Apple</span>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- REGISTER LINK -->
+                    <div class="login-register">
+
+                        <p>
+                            Don't have an account?
+
+                            <a href="register.html">
+                                Create an Account
+                            </a>
+                        </p>
+
+                    </div>
+
+
+                    <!-- BOTTOM TAGLINE -->
+                    <div class="login-bottom-tagline">
+                        <span>DESIGN</span>
+                        <span>•</span>
+                        <span>DAYLIGHT</span>
+                        <span>•</span>
+                        <span>COMFORT</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    
+<!-- JAVASCRIPT -->
+    <script src="js/main.js"></script>
+</body>
+</html>
