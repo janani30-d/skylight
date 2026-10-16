@@ -1367,3 +1367,43 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SCROLL TO TOP FUNCTIONALITY */
+
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    if (!scrollTopBtn) return;
+
+    function toggleScrollTopButton() {
+        scrollTopBtn.classList.toggle("show", window.scrollY > 300);
+    }
+
+    window.addEventListener("scroll", toggleScrollTopButton, {
+        passive: true
+    });
+
+    toggleScrollTopButton();
+
+    scrollTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
